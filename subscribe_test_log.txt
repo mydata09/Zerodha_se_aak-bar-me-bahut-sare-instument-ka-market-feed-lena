@@ -1,0 +1,9 @@
+=== Subscription test start: 3000 tokens, batch_size=200, delay=2s ===
+Subscribed so far: 200 (is batch me: 200)
+Subscribed so far: 400 (is batch me: 200)
+Subscribed so far: 600 (is batch me: 200)
+Server se errors mile (total 1): ["Can't subscribe to more than 500 instruments."]
+Yahi ruk rahe hain. Aakhri safe count ~ 400
+=== Batches khatam, 20 sec aur observe kar rahe hain (delayed error/disconnect check) ===
+Total 1 server errors observe hue puri run me.
+=== FINAL: 600 tokens tak test kiya gaya ===

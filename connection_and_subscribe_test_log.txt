@@ -1,0 +1,99 @@
+========== PHASE 1: Kitne WebSocket connections (same enctoken se) ek saath ban sakte hai ==========
+[conn-1] Connect karne ki koshish (0 pehle se open hai)...
+[conn-1] Connect ho gaya.
+[conn-2] Connect karne ki koshish (1 pehle se open hai)...
+[conn-2] Connect ho gaya.
+[conn-3] Connect karne ki koshish (2 pehle se open hai)...
+[conn-3] Connect ho gaya.
+[conn-4] Connect karne ki koshish (3 pehle se open hai)...
+[conn-4] Connect ho gaya.
+[conn-5] Connect karne ki koshish (4 pehle se open hai)...
+[conn-5] Connect ho gaya.
+MAX_CONNECTIONS_TO_TRY (5) tak koi dikkat nahi aayi -- shayad aur bhi ban sakte hai, MAX_CONNECTIONS_TO_TRY badha ke dobara try karo.
+
+>>> RESULT PHASE 1: 5 connections successfully bane, 5 abhi bhi open/zinda hai. <<<
+
+========== PHASE 2: Har open connection par kitne instruments subscribe ho rahe hai ==========
+
+--- conn-1 par test start (700 tokens available) ---
+[conn-1] Subscribed so far: 50
+[conn-1] Subscribed so far: 100
+[conn-1] Subscribed so far: 150
+[conn-1] Subscribed so far: 200
+[conn-1] Subscribed so far: 250
+[conn-1] Subscribed so far: 300
+[conn-1] Subscribed so far: 350
+[conn-1] Subscribed so far: 400
+[conn-1] Subscribed so far: 450
+[conn-1] Subscribed so far: 500
+[conn-1] Subscribed so far: 550
+[conn-1] Server error mila: Can't subscribe to more than 500 instruments.
+[conn-1] Safe limit ~ 500 instruments.
+
+--- conn-2 par test start (700 tokens available) ---
+[conn-2] Subscribed so far: 50
+[conn-2] Subscribed so far: 100
+[conn-2] Subscribed so far: 150
+[conn-2] Subscribed so far: 200
+[conn-2] Subscribed so far: 250
+[conn-2] Subscribed so far: 300
+[conn-2] Subscribed so far: 350
+[conn-2] Subscribed so far: 400
+[conn-2] Subscribed so far: 450
+[conn-2] Subscribed so far: 500
+[conn-2] Subscribed so far: 550
+[conn-2] Server error mila: Can't subscribe to more than 500 instruments.
+[conn-2] Safe limit ~ 500 instruments.
+
+--- conn-3 par test start (700 tokens available) ---
+[conn-3] Subscribed so far: 50
+[conn-3] Subscribed so far: 100
+[conn-3] Subscribed so far: 150
+[conn-3] Subscribed so far: 200
+[conn-3] Subscribed so far: 250
+[conn-3] Subscribed so far: 300
+[conn-3] Subscribed so far: 350
+[conn-3] Subscribed so far: 400
+[conn-3] Subscribed so far: 450
+[conn-3] Subscribed so far: 500
+[conn-3] Subscribed so far: 550
+[conn-3] Server error mila: Can't subscribe to more than 500 instruments.
+[conn-3] Safe limit ~ 500 instruments.
+
+--- conn-4 par test start (700 tokens available) ---
+[conn-4] Subscribed so far: 50
+[conn-4] Subscribed so far: 100
+[conn-4] Subscribed so far: 150
+[conn-4] Subscribed so far: 200
+[conn-4] Subscribed so far: 250
+[conn-4] Subscribed so far: 300
+[conn-4] Subscribed so far: 350
+[conn-4] Subscribed so far: 400
+[conn-4] Subscribed so far: 450
+[conn-4] Subscribed so far: 500
+[conn-4] Subscribed so far: 550
+[conn-4] Server error mila: Can't subscribe to more than 500 instruments.
+[conn-4] Safe limit ~ 500 instruments.
+
+--- conn-5 par test start (700 tokens available) ---
+[conn-5] Subscribed so far: 50
+[conn-5] Subscribed so far: 100
+[conn-5] Subscribed so far: 150
+[conn-5] Subscribed so far: 200
+[conn-5] Subscribed so far: 250
+[conn-5] Subscribed so far: 300
+[conn-5] Subscribed so far: 350
+[conn-5] Subscribed so far: 400
+[conn-5] Subscribed so far: 450
+[conn-5] Subscribed so far: 500
+[conn-5] Subscribed so far: 550
+[conn-5] Server error mila: Can't subscribe to more than 500 instruments.
+[conn-5] Safe limit ~ 500 instruments.
+
+========== FINAL SUMMARY ==========
+Total simultaneous connections bane: 5 (isi enctoken se)
+  conn-1: ~500 instruments tak subscribe hue, uske baad error/limit aayi
+  conn-2: ~500 instruments tak subscribe hue, uske baad error/limit aayi
+  conn-3: ~500 instruments tak subscribe hue, uske baad error/limit aayi
+  conn-4: ~500 instruments tak subscribe hue, uske baad error/limit aayi
+  conn-5: ~500 instruments tak subscribe hue, uske baad error/limit aayi
